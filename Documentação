@@ -1,0 +1,22 @@
+O Desenvolvimento da aplicação foi feita utilizando o framework PHP Laravel na versão 5.4.
+Versão do PHP 5.6.
+
+Itens utilizados no sistema:
+  - Template AdminLte
+  
+  - Laravel Auth() ->Autenticação simples;
+  (Usuario: administrador@user.com
+   Senha:secret)
+   
+  - Validação de Dados a serem cadastradas utilizando Request do próprio framework;
+  - Cadastro com campo de inputs de imagens;
+    - Modal para exibição de dados na tela do usuário;
+    - Poder visualizar o produto com todos os detalhes;
+    - Mensagem de Confirmação de exclusão;
+  
+  - Criação de uma simples API para buscar de informações e de montadoras e carros que poderá
+  ser utilizado em um aplicação mobile por exemplo.
+  - (http://127.0.0.1:8000/api/cars);
+  - (http://127.0.0.1:8000/api/marks);
+  
+  
