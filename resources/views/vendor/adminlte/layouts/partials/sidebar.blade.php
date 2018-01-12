@@ -24,7 +24,7 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-database'></i> <span> MÓDULO CADASTROS</span><i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('mark.index') }}"><i class='fa fa-credit-card'></i> <span> MONTADORA</span></a></li>
+                    <li><a href="{{ route('mark.index') }}"><i class='fa fa-industry'></i> <span> MONTADORA</span></a></li>
                     <li><a href="{{ route('car.index') }}"><i class='fa fa-car'></i> <span> CARROS</span></a></li>
                 </ul>
             </li>

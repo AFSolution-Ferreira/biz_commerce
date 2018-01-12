@@ -26,9 +26,10 @@
                 @endif
                 {{--VALIDACOES DO FORMULARIOS--}}
                 <div class="box box-primary">
-                    <form role="form" action="{{ route('mark.save') }}" method="post"
-                          enctype="multipart/form-data">
-                        {{csrf_field()}}
+                    {{--<form role="form" action="{{ route('mark.save') }}" method="post"--}}
+                          {{--enctype="multipart/form-data">--}}
+                        {{--{{csrf_field()}}--}}
+                    {!! Form::open(['route' => 'mark.save', 'class'=>'form']) !!}
                         <div class="box-body">
                             @include('adminlte::mark._form')
                         </div>
@@ -50,7 +51,8 @@
                                 </a>
                             </div>
                         </div>
-                    </form>
+                    {{--</form>--}}
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

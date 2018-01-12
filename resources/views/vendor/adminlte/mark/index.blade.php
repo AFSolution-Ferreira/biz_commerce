@@ -46,6 +46,11 @@
                                 </span>
                         </div>
                         </form>
+                        {{--{!! Form::open(['route'=>'mark.index', ]) !!}--}}
+                        {{--<div class="input-group custom-search-form col-xs-10">--}}
+                            {{--{!! Form::text('search', null, ['class'=>'form-control', 'placeholder'=>'PESQUISAR', 'style'=>'text-transform:uppercase']) !!}--}}
+                        {{--</div>--}}
+                        {{--{!! Form::close() !!}--}}
                     </div>
                 </div>
                 {{--<div class="panel-body">--}}
