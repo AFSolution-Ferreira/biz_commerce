@@ -46,14 +46,9 @@
                                 </span>
                         </div>
                         </form>
-                        {{--{!! Form::open(['route'=>'mark.index', ]) !!}--}}
-                        {{--<div class="input-group custom-search-form col-xs-10">--}}
-                            {{--{!! Form::text('search', null, ['class'=>'form-control', 'placeholder'=>'PESQUISAR', 'style'=>'text-transform:uppercase']) !!}--}}
-                        {{--</div>--}}
-                        {{--{!! Form::close() !!}--}}
                     </div>
                 </div>
-                {{--<div class="panel-body">--}}
+                <div class="panel-body">
                 <div class="box-body table-responsive">
                     @if($marks->count() > 0)
                     <table class="table table-striped" id="tbl-mark">
@@ -153,6 +148,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection
 

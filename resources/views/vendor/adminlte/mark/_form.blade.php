@@ -1,4 +1,3 @@
-@if( isset($mark))
 <div class="form-group col-xs-12 {{ $errors->has('name') ? 'has-error' : ''}}">
     {{--<label>Nome</label>--}}
     {{--<input type="text" class="form-control" name="name" value="{{ isset($mark->name) ? $mark->name : ''}} {{old('name')}}" style="text-transform:uppercase">--}}
@@ -38,7 +37,6 @@
     {!! Form::label('Inserir Logo Marca') !!}
     {!! Form::file('image') !!}
 </div>
-@endif
 
 
 
