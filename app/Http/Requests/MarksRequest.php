@@ -25,7 +25,7 @@ class MarksRequest extends FormRequest
     {
         return [
             'name' => 'required|min:5|max:100',
-            'description' => 'required|min:5|max:100',
+            'description' => 'required|min:5|max:150',
             'image' => 'required',
         ];
     }
@@ -37,7 +37,7 @@ class MarksRequest extends FormRequest
             'name.max' => 'Máximo de 5 caracteres',
             'name.required' => 'Campo NOME Obrigatório',
             'description.min' => 'Mínimo de 5 caracteres',
-            'description.max' => 'Maximo de 100 caracteres',
+            'description.max' => 'Maximo de 150 caracteres',
             'description.required' => 'Campo DESCRIÇÃO Obrigatório',
             'image.required' => 'Insirá uma LOGOMARCA Obrigatório',
         ];
