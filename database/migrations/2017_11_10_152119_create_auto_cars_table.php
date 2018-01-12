@@ -17,9 +17,9 @@ class CreateAutoCarsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('image');
-            $table->float('price', 10,2);
+            $table->double('price', 10,2);
             $table->string('year');
-            $table->string('description');
+            $table->longText('description');
 
             $table->integer('automaker_id')->unsigned();
             $table->foreign('automaker_id')->references('id')->on('automakers')->onDelete('cascade');

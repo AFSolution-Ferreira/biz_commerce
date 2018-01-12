@@ -27,7 +27,7 @@ class CarsRequest extends FormRequest
             'name' => 'required|min:5|max:100',
             'year' => 'required|min:4|max:9',
             'price' => 'required',
-            'description' => 'required|min:4|max:200',
+            'description' => 'required|min:4|max:700',
             'image' => 'required',
             'automaker_id' => 'required',
         ];
@@ -42,13 +42,11 @@ class CarsRequest extends FormRequest
             'name.min' => 'Mínimo de 5 caracteres',
             'name.max' => 'Máximo de 100 caracteres',
             'name.required' => 'Preencha o campo NOME',
-            'year.min' => 'Mínimo de 5 caracteres',
-            'year.max' => 'Máximo de 100 caracteres',
             'year.required' => 'Preencha o campo Ano de Fabricação - (EX:2017/2018)',
             'year.required' => 'Preencha o campo Preçao do Veículo',
             'description.required' => 'Preencha o campo Descrição',
             'description.min' => 'Mínimo de 5 caracteres',
-            'description.max' => 'Máximo de 100 caracteres',
+            'description.max' => 'Máximo de 700 caracteres',
             'image.required' => 'Insirá uma IMAGEM do veículo',
             'automaker_id.required' => 'Selecione uma MONTADORA',
         ];

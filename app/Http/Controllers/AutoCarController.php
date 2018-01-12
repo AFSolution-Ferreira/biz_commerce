@@ -51,7 +51,7 @@ class AutoCarController extends Controller
      */
     public function create()
     {
-        $marks = $this->automaker->all();
+        $marks = $this->automaker->pluck('name', 'id');
         $car = $this->autocar->all();
         return view('adminlte::car.create', compact('car', 'marks'));
     }
@@ -95,9 +95,10 @@ class AutoCarController extends Controller
      */
     public function edit($id)
     {
-        $marks = $this->automaker->all();
+        $marks = $this->automaker->pluck('name', 'id');
         $car = $this->autocar->find($id);
         return view('adminlte::car.edit', compact('car', 'marks'));
+
     }
 
     /**

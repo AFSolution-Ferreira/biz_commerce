@@ -35,7 +35,7 @@
         {{--</span>--}}
     {{--@endif--}}
     {!! Form::label('Inserir Logo Marca') !!}
-    {!! Form::file('image') !!}
+    {!! Form::file('image', ['class'=>'form-control']) !!}
 </div>
 
 

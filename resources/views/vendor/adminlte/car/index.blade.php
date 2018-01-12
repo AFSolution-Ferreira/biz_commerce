@@ -125,7 +125,7 @@
                                                 <p style="text-transform:uppercase"><b>DESCRIÇÃO:</b> {{$car->description}}</p>
                                                 <p style="text-transform:uppercase"><b>PREÇO ATUAL:</b> R${{$car->price}}</p>
                                                 <p style="text-transform:uppercase"><b>ANO DE FABRICAÇÃO:</b> {{$car->year}}</p>
-                                                <img height="300" src="{{ asset($car->image )}}">
+                                                <img height="250" src="{{ asset($car->image )}}">
                                             </div>
                                             <div class="modal-footer ">
                                                 <button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -143,7 +143,6 @@
                     </table>
                     <div>
                         {{ $cars->appends(['search' => $search])->links() }}
-                        {{--{{ $cars->links() }}--}}
                     </div>
                 </div>
             </div>

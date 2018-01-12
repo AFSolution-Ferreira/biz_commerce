@@ -26,9 +26,10 @@
                 @endif
                 {{--VALIDACOES DO FORMULARIOS--}}
                 <div class="box box-success">
-                    <form role="form" action="{{ route('car.save') }}" method="post"
-                          enctype="multipart/form-data">
-                        {{csrf_field()}}
+                    {!! Form::open(['route'=>'car.save', 'class'=>'form', 'files' => true]) !!}
+                    {{--<form role="form" action="{{ route('car.save') }}" method="post"--}}
+                          {{--enctype="multipart/form-data">--}}
+                        {{--{{csrf_field()}}--}}
                         <div class="box-body">
                             @include('adminlte::car._form')
                         </div>
@@ -50,7 +51,8 @@
                                 </a>
                             </div>
                         </div>
-                    </form>
+                    {{--</form>--}}
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

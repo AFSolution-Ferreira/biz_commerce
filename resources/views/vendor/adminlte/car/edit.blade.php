@@ -28,10 +28,11 @@
 
                 {{--VALIDACOES DO FORMULARIOS--}}
                 <div class="box box-success">
-                    <form role="form" action="{{ route('car.update', ['id' => $car->id]) }}" method="post"
-                          enctype="multipart/form-data">
-                        {{csrf_field()}}
-                        {{method_field('PUT')}}
+                    {!! Form::model([$car ,['route'=>['car.update', $car->id], 'class'=>'form', 'method'=>'put']]) !!}
+                    {{--<form role="form" action="{{ route('car.update', ['id' => $car->id]) }}" method="post"--}}
+                          {{--enctype="multipart/form-data">--}}
+                        {{--{{csrf_field()}}--}}
+                        {{--{{method_field('PUT')}}--}}
                         <input type="hidden" name="_method" value="put">
                         <div class="box-body">
                             @include('adminlte::car._form')
@@ -53,7 +54,8 @@
                                 </a>
                             </div>
                         </div>
-                    </form>
+                    {{--</form>--}}
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
