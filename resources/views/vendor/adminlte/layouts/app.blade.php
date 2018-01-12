@@ -59,5 +59,9 @@ desired effect
     @include('adminlte::layouts.partials.scripts')
 @show
 
+@section('my_scripts')
+
+@show
+
 </body>
 </html>

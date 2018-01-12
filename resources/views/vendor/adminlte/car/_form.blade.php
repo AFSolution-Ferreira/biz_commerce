@@ -20,7 +20,7 @@
         </div>
         <div class="form-group col-xs-4 {{ $errors->has('price') ? 'has-error' : ''}}">
             {!! Form::label('Preço') !!}
-            {!! Form::text('price', null, ['class'=> 'form-control']) !!}
+            {!! Form::text('price', null, ['class'=> 'form-control', 'placeholder'=>'180.000.00']) !!}
         </div>
     </div>
 </div>
